@@ -106,8 +106,11 @@ const styles = StyleSheet.create({
 
     googleContainer: {
         flexDirection: "row",
-        gap: 5,
-
+        gap: 6,
+        backgroundColor: "#2116f0ff",
+        paddingHorizontal: 30,
+        paddingVertical: 8,
+        borderRadius: 5
     },
 
     text: {
