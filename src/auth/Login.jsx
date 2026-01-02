@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import InputBox from "../components/InputBox";
 import CustomBtn from "../components/CustomBtn";
+import Logo from "../components/Logo";
 import { Link } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -15,7 +16,7 @@ const Login = () => {
             end={{ x: 0.9, y: 1 }}
         >
             <View style={styles.mainContent}>
-                <Text style={styles.heading}>VibeShare</Text>
+                <Logo fontSize={50} color='#efe3e3ff' />
                 <View style={styles.formContainer}>
                     <InputBox
                         placeholder="Phone number, Username or email address"
@@ -69,13 +70,6 @@ const styles = StyleSheet.create({
     mainContent: {
         alignItems: "center",
         paddingTop: 150,
-    },
-
-    heading: {
-        fontSize: 50,
-        fontWeight: 'bold',
-        color: '#efe3e3ff',
-        fontFamily: "cursive"
     },
 
     formContainer: {
