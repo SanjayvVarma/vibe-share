@@ -1,9 +1,9 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const CustomBtn = ({ btnTitle, }) => {
+const CustomBtn = ({ btnTitle, onPress }) => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onPress}>
             <View style={styles.btn}>
                 <Text style={styles.btnTxt}>{btnTitle}</Text>
             </View>

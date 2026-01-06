@@ -3,12 +3,17 @@ import { LinearGradient } from 'expo-linear-gradient';
 import InputBox from "../components/InputBox";
 import CustomBtn from "../components/CustomBtn";
 import Logo from "../components/Logo";
-import { Link } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
 const Login = () => {
-    return (
+    const router = useRouter();
 
+    const onLogin = () => {
+      router.replace("/(tabs)")
+    }
+
+    return (
         <LinearGradient
             colors={['#6a166fe2', '#60947bf3', '#2b4f88ff']}
             style={styles.container}
@@ -30,7 +35,7 @@ const Login = () => {
                     <Link href="/forgot-password" style={styles.link}>
                         Forgotten Password?
                     </Link>
-                    <CustomBtn btnTitle="Log In" />
+                    <CustomBtn btnTitle="Log In" onPress={onLogin} />
                 </View>
 
                 <View style={styles.lineContainer}>
