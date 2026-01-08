@@ -7,8 +7,8 @@ const Header = () => {
         <View style={styles.container}>
             <Logo fontSize={32} color={"white"} />
             <View style={styles.icon}>
-                <FontAwesome size={26} name="search" color="blue" />
-                <FontAwesome size={26} name="bell" color="blue" />
+                <FontAwesome size={26} name="search" color="#aaa" />
+                <FontAwesome size={26} name="bell-o" color="#aaa" />
             </View>
         </View>
     )
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         paddingVertical: 13,
         backgroundColor: '#24162bff',
         elevation: 4,
-        shadowColor: "#944949ff",
+        shadowColor: "#797575ff",
         shadowOpacity: 0.5,
         shadowRadius: 6,
     },

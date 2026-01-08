@@ -53,7 +53,7 @@ export default function TabLayout() {
                     tabBarIcon: ({ focused }) => (
                         <Image
                             source={{
-                                uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHC9h4miHDT7SeZIs03UdztEnbNELc9GkxQ&s", // 👈 demo avatar
+                                uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4e0p24gn-ccUXYZ6jZMr3MUG0DyLdP_UWEA&s",
                             }}
                             style={{
                                 width: 27,
